@@ -32,7 +32,7 @@ public class StudentController {
 
  @PostMapping
 
- public ResponseEntity<Student> saveStudent(@RequestBody student student){
+ public ResponseEntity<Student> saveStudent(@RequestBody Student student){
  return new 
  ResponseEntity<Student>(StudentService.saveStudent(student), 
 HttpStatus.CREATED);

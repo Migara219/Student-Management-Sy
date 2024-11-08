@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Entity.Student;
+import entity.Student;
 
 import Service.StudentService;
 
@@ -32,9 +32,9 @@ public class StudentController {
 
  @PostMapping
 
- public ResponseEntity<Student> saveStudent(@RequestBody Student student){
+ public ResponseEntity<Student> saveStudent(@RequestBody student student){
  return new 
- ResponseEntity<Student>(studentService.saveStudent(student), 
+ ResponseEntity<Student>(StudentService.saveStudent(student), 
 HttpStatus.CREATED);
  }
 

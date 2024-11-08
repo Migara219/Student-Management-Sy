@@ -1,4 +1,4 @@
-package com.example;
+package entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
